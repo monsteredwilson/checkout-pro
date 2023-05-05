@@ -1,0 +1,184 @@
+
+.BoxData{
+    max-width: 960px;
+    min-width: 300px;
+    min-height: 100vh;
+	width: 50%;
+	justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 8px;
+    padding: 24px;
+	background-color: #fff;
+	border: 1px groove #b8b8b8;
+	box-shadow: 1px 1px 3px #b8b8b8;
+
+}
+
+.BoxSubtitle{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: -20px;
+    margin-top: -20px;
+    align-self: flex-start;
+}
+
+.BoxSubtitle>div{
+    background-color: #333;
+    color: #fff;
+    width: 24px;
+    border-radius: 50%;
+}
+
+.BoxSubtitle>h2{
+    color: #3fc573;
+	margin-bottom: 48px;
+}
+
+.BoxTitle>p{
+    text-align: left;
+}
+
+.FormData{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.DivInput{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 8px 0px;
+	width: 100%;
+}
+
+.DivInput>input{
+	width: 95%;
+	height: 36px;
+	border-radius: 8px;
+	border: 1px groove #d0d0d0;
+	padding-left: 10px;
+}
+
+.Address{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 12px;
+    gap: 26px;
+}
+
+/* .Address{
+    max-width: 42%;
+    display: flex;
+    flex-direction: column;
+} */
+.Neighbor{
+    display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	/* margin: 8px 0px; */
+	width: 100%;
+}
+
+.Neighbor>input{
+	width: 90%;
+	height: 36px;
+	border-radius: 8px;
+	border: 1px groove #d0d0d0;
+	padding-left: 10px;
+}
+
+.NumberAddress{
+    display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	/* margin: 8px 0px; */
+	width: 40%;
+}
+
+.NumberAddress>input{
+    width: 90%;
+	height: 36px;
+	border-radius: 8px;
+	border: 1px groove #d0d0d0;
+	padding-left: 10px;
+}
+
+.ContainerCEP{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+	width: 100%;
+	gap: 16px;
+}
+
+.DivCEP{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 8px 0px;
+	width: 60%;
+}
+
+.MaskCEP{
+    width: 95%;
+	height: 36px;
+	border-radius: 8px;
+	border: 1px groove #d0d0d0;
+	padding-left: 10px;
+}
+
+.SectionFrete{
+    display: flex;
+    flex-direction: row;
+    max-height: 67px;
+    width: 92%;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid #333;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.SectionFrete>div{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.SectionFrete>div>h3{
+    font-size: 15px;
+    margin: 0;
+}
+
+.SectionFrete>div>p{
+    font-size: 13px;
+    margin: 0;
+}
+
+.SectionFrete>p{
+    color: #3fc573;
+}
+
+.ContinueButton{
+    background-color: #3fc573;
+    color: #fff;
+    width: 100%;
+    margin-top: 16px;
+    height: 50px;
+}
+
+.ContinueButton:hover{
+    background-color: #3fc599;
+}

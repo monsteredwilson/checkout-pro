@@ -1,0 +1,25 @@
+.BannerContainer{
+	max-width: 960px;
+    min-width: 300px;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.BannerImg{
+	width: 99%;
+	border-radius: 16px;
+}
+
+.BannerSubtitle{
+	background-color: #3fc573;
+	color: #f8f8f8;
+	padding: 0px 16px;
+	margin-top: 16px;
+	margin-bottom: 20px;
+	border-radius: 8px;
+	width: 90%;
+	font-size: 12px;
+}

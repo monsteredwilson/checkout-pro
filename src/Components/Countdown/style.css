@@ -1,0 +1,10 @@
+
+.Contador{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 54px;
+    font-weight: bold;
+    color: #d80a0a;
+}

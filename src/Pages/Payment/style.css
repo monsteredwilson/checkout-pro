@@ -1,0 +1,7 @@
+.PayloadContainer {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    height: 100vh;
+    padding: 16px;
+}

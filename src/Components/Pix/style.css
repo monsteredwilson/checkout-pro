@@ -1,0 +1,67 @@
+
+.PixContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.LogoMP>img{
+    max-height: 50px;
+    max-width: 190px;
+    padding-top: 16px;
+}
+
+.BoxTitlePix{
+    font-size: 16px;
+}
+
+.PaymentConfirmed{
+    font-size: 36px;
+    color: green;
+}
+
+.MessageToCopyAndPaste>p{
+    font-size: medium;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+.MessageToCopyAndPaste>p>span{
+    font-weight: bold;
+    color: #000;
+}
+
+.PixCopyAndPaste{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.PixCopyAndPaste>span{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+}
+
+.ButtonCopyPix{
+    background-color: #3fc573;
+    color: #f0f0f0;
+    width: 250px;
+}
+
+.QRCodePix{
+    max-width: 300px;
+    padding-bottom: 16px;
+}
+
+.HowToPay{
+    max-width: 300px;
+    padding-bottom: 54px;
+}
