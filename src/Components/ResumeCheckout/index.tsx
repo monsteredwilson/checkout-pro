@@ -1,13 +1,11 @@
 import './style.css'
-import teste from '../../assets/how-to-pay.png'
-import teste2 from '../../assets/mercado-pago.png'
 import { useState } from 'react'
 
 // "https://gmedia.playstation.com/is/image/SIEPDC/Controller-XL@2x?fmt=png-alpha&scl=1"
 
 export function ResumeCheckout(){
 
-	const [useImage, setUseImage] = useState('https://gmedia.playstation.com/is/image/SIEPDC/Controller-XL@2x?fmt=png-alpha&scl=1')
+	const [useImage] = useState('https://gmedia.playstation.com/is/image/SIEPDC/Controller-XL@2x?fmt=png-alpha&scl=1')
 
 	
 
