@@ -21,9 +21,14 @@ export function FormAddress() {
 		fetch(`https://viacep.com.br/ws/${cep}/json/`)
 			.then(res => res.json())
 			.then(data => {
+				console.log(data)
 				setEndereco(data.logradouro)
 				setBairro(data.bairro)
-				setEstado(`${data.localidade}-${data.uf}`)
+				if(data.erro){
+					setEstado('CEP Inválido')
+				} else {
+					setEstado(`${data.localidade}-${data.uf}`)
+				}
 			})
 
 

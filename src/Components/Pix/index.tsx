@@ -1,27 +1,33 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Contador } from "../Countdown";
 import './style.css'
 import mercadopago from '../../assets/mercado-pago.png'
-import qrcode from '../../assets/qrcode-pix.png'
+import qrcode from '../../assets/qrcode.png'
 import howtopay from '../../assets/how-to-pay.png'
 import { toast } from "react-toastify";
 
 
 export function PixGenerator() {
 
-    const [timePayment, setTimePayment] = useState('')
-    const [contador, setContador] = useState(5 * 60)
+    // const [timePayment, setTimePayment] = useState('')
+    // const [contador, setContador] = useState(5 * 60)
 
-    useEffect(() => {
-        if (contador == 0) {
-            setTimePayment('Pagamento realizado com sucesso!')
-        }
-        setTimeout(() => {
-            setContador(contador - 1)
-        }, 1000)
-    }, [contador])
+    // useEffect(() => {
+    //     if (contador == 0) {
+    //         setTimePayment('Pagamento realizado com sucesso!')
+			
+    //     }
+    //     setTimeout(() => {
+    //         setContador(contador - 1)
+    //     }, 1000)
+		
+    // }, [contador])
 
-    const texto: string = `00020126360014BR.GOV.BCB.PIX0114+5562993716245520400005303986540589.005802BR5912Adryel Cesar6007Goiania62160512PAGAMENTO2076304508D`
+	useEffect(()=>{
+		console.log(localStorage.getItem('product'))
+	},[])
+
+    const texto: string = `00020126580014BR.GOV.BCB.PIX0136290c3eec-b061-41cf-88ce-6c5f984e515e5204000053039865406397.905802BR5913LOJAO-POPULAR6009Sao Paulo62190515PAGAMENTOSAX35263049111`
 
     function CopiarBotao(texto: string) {
         navigator.clipboard.writeText(texto);
@@ -38,18 +44,18 @@ export function PixGenerator() {
                 <p>Estamos aguardando o pagamento!</p>
                 <p>Tempo para conclusão da operação</p>
                 <Contador />
-                <span className="PaymentConfirmed">{timePayment}</span>
+                {/* <span className="PaymentConfirmed">{timePayment}</span> */}
             </div>
             <div className="MessageToCopyAndPaste">
                 <p>Pague através do código <span>PIX copia e cola</span>.</p>
                 <div className="PixCopyAndPaste">
                     <span>
-                        00020126360014BR.GOV.BCB.
-                        PIX0114+
-                        55629937162
-                        45520400005303986540589.
-                        005802BR5912Adryel Cesar6007Goiania
-                        62160512PAGAMENTO2076304508D
+						00020126580014BR.GOV.BCB.
+						PIX0136
+						290c3eec-b061-41cf-88ce-6c5f984e515e
+						5204000053039865406397.
+						905802BR5913LOJAO-POPULAR6009Sao Paulo
+						62190515PAGAMENTOSAX35263049111
                     </span>
                     <button className="ButtonCopyPix" onClick={() => CopiarBotao(texto)}>Copiar PIX</button>
                 </div>
