@@ -12,6 +12,7 @@
           "font-synthesis"
         ]
       }
-    ]
+    ],
+    "meta-viewport": "on"
   }
 }
