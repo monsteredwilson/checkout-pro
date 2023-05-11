@@ -6,7 +6,7 @@ export const Router = ()=>{
 	return(
 		<Routes>
 			<Route path='/' element={<Checkout/>}/>
-			<Route path='/:id' element={<Checkout/>}/>
+			<Route path='/product/:id' element={<Checkout/>}/>
 			<Route path='/payment' element={<PixGenerator/>}/>
 		</Routes>
 	)
